@@ -1,0 +1,215 @@
+.main {
+  padding: 84px 120px 104px 120px;
+}
+
+.detailsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 72px;
+}
+
+.imgForm {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.carImg {
+  width: 640px;
+  height: 512px;
+}
+
+.carImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18.74px;
+}
+
+.carInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.carInfo svg {
+  stroke: var(--main-text-color) !important;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--main-text-color);
+}
+
+.carMainInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 68px;
+}
+
+.idBrandModel {
+  height: 32px;
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.idBrandModel h2 {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0%;
+  color: var(--main-text-color);
+}
+
+.idBrandModel p {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0%;
+  color: var(--second-text-color);
+}
+
+.location-mileage {
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 16px;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0%;
+  color: var(--main-text-color);
+}
+
+.carPrice {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  color: var(--button-background);
+  margin-bottom: 32px;
+}
+
+.carDescription {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.carCondition {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  margin-bottom: 110px;
+}
+
+.carCondition h3 {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0%;
+  color: var(--main-text-color);
+}
+
+.carCondition ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+
+.carCondition li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0%;
+  color: var(--main-text-color);
+}
+
+.carSpecification {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  margin-bottom: 110px;
+}
+
+.carSpecification h3 {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0%;
+  color: var(--main-text-color);
+}
+
+.carSpecification ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+
+.carSpecification li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0%;
+  color: var(--main-text-color);
+}
+
+.carFunction {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.carFunction h3 {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0%;
+  color: var(--main-text-color);
+}
+
+.carFunction ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+
+.carFunction li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0%;
+  color: var(--main-text-color);
+}

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+@import url('./App.css');
+@import url('modern-normalize');
+
+:root {
+  /* colors */
+
+  --primary-text-color: #101828;
+  --secondary-text-color: #8e929a;
+
+  --btn: #3470ff;
+  --btn-active: #0b44cd;
+  --main-background: #dadde1;
+  --header-bg: #f2f4f7;
+  --input-bg: #f7f7f7;
+  --white: #ffffff;
+
+  /* fonts */
+  --primary-font: 'Manrope', sans-serif;
+  --secondary-font: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--white);
+}

@@ -1,0 +1,136 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 56px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--second-text-color);
+  margin-bottom: 8px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 30px;
+  border: none;
+  background-color: none;
+  width: 204px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background-color: var(--input-background);
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  height: 44px;
+  cursor: pointer;
+}
+
+.option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0;
+  color: var(--second-text-color);
+  cursor: pointer;
+}
+
+.select:hover,
+.select:focus {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: var(--main-text-color);
+}
+
+.select_container {
+  position: relative;
+  width: 204px;
+  cursor: pointer;
+}
+
+.icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.inputs {
+  position: relative;
+}
+
+.inputFrom {
+  width: 160px;
+  padding: 12px 0 12px 64px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border: none;
+  border-right: 1px solid var(--favorite-background);
+  background-color: var(--input-background);
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  height: 44px;
+}
+
+.textForm {
+  position: absolute;
+  top: 36px;
+  left: 24px;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.inputTo {
+  width: 160px;
+  padding: 12px 0 12px 44px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border: none;
+  background-color: var(--input-background);
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  height: 44px;
+}
+
+.textTo {
+  position: absolute;
+  top: 36px;
+  left: 184px;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
