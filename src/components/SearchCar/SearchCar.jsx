@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import Select from 'react-select';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchCarBrands } from '../../redux/cars/operations.js';
-import { selectCarBrands } from '../../redux/cars/selectors.js';
+import { selectBrands } from '../../redux/cars/selectors.js';
+import { getCarsBrand } from '../../redux/cars/operations.js';
 import {
   setBrandFilter,
   setRentalPriceFilter,
@@ -10,7 +10,7 @@ import {
   setMaxMileageFilter,
 } from '../../redux/filters/slice.js';
 import {
-  selectedBrands,
+  selectedBrand,
   selectedRentalPrice,
   selectedMinMileage,
   selectedMaxMileage,
@@ -20,15 +20,15 @@ import sprite from '/icons/sprite1.svg';
 import s from './SearchCar.module.css';
 import toast from 'react-hot-toast';
 
-export const SearchCar = ({ onFilterApply }) => {
+export const SearchCar = ({ onSearch }) => {
   const dispatch = useDispatch();
   const [isBrandDropdownVisible, setIsBrandDropdownVisible] = useState(false);
-  const selectedBrand = useSelector(selectedBrands);
+  const selectBrand = useSelector(selectedBrand);
   const [isPriceDropdownVisible, setIsPriceDropdownVisible] = useState(false);
   const selectedPrice = useSelector(selectedRentalPrice);
   const minMileage = useSelector(selectedMinMileage);
   const maxMileage = useSelector(selectedMaxMileage);
-  const carBrands = useSelector(selectCarBrands);
+  const carBrands = useSelector(selectBrands);
 
   const priceOptions = Array.from({ length: 17 }, (_, i) => ({
     value: (i + 3) * 10,
@@ -38,7 +38,7 @@ export const SearchCar = ({ onFilterApply }) => {
   const brandOptions = carBrands.map(brand => ({ value: brand, label: brand }));
 
   useEffect(() => {
-    dispatch(fetchCarBrands());
+    dispatch(getCarsBrand());
   }, [dispatch]);
 
   const handleMinMileageChange = event => {
@@ -68,7 +68,7 @@ export const SearchCar = ({ onFilterApply }) => {
   const handleSubmitFilter = event => {
     event.preventDefault();
     const filterData = {
-      brand: selectedBrand.value,
+      brand: selectBrand.value,
       price: selectedPrice.value,
       minMileage:
         minMileage === ''
@@ -79,7 +79,7 @@ export const SearchCar = ({ onFilterApply }) => {
           ? ''
           : Math.round(Number(maxMileage) / 1.60934).toString(),
     };
-    onFilterApply(filterData);
+    onSearch(filterData);
     dispatch(setBrandFilter(''));
     dispatch(setRentalPriceFilter(''));
     dispatch(setMinMileageFilter(''));
@@ -102,7 +102,7 @@ export const SearchCar = ({ onFilterApply }) => {
           <Select
             id="brandSelect"
             placeholder="Choose a brand"
-            value={selectedBrand}
+            value={selectBrand}
             isClearable
             onChange={selectedOption =>
               dispatch(setBrandFilter(selectedOption))
