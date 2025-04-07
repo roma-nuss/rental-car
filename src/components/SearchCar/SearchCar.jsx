@@ -96,9 +96,9 @@ export const SearchCar = ({ onSearch }) => {
 
   return (
     <form className={s.form} onSubmit={handleSubmitFilter}>
-      <div className={s.filterSection}>
+      <div className={s.container}>
         <label htmlFor="brandSelect">Select Car Brand</label>
-        <div className={s.selectWrapper} onClick={toggleBrandDropdown}>
+        <div className={s.select_container} onClick={toggleBrandDropdown}>
           <Select
             id="brandSelect"
             placeholder="Choose a brand"
@@ -135,7 +135,7 @@ export const SearchCar = ({ onSearch }) => {
             }}
             menuIsOpen={isBrandDropdownVisible}
           />
-          <svg className={s.chevronIcon}>
+          <svg className={s.icon}>
             <use
               href={
                 isBrandDropdownVisible
@@ -147,9 +147,9 @@ export const SearchCar = ({ onSearch }) => {
         </div>
       </div>
 
-      <div className={s.filterSection}>
+      <div className={s.container}>
         <label htmlFor="priceSelect">Price Per Hour</label>
-        <div className={s.selectWrapper} onClick={togglePriceDropdown}>
+        <div className={s.select_container} onClick={togglePriceDropdown}>
           <Select
             id="priceSelect"
             placeholder="Choose a price"
@@ -178,7 +178,7 @@ export const SearchCar = ({ onSearch }) => {
             }}
             menuIsOpen={isPriceDropdownVisible}
           />
-          <svg className={s.chevronIcon}>
+          <svg className={s.icon}>
             <use
               href={
                 isPriceDropdownVisible
@@ -190,23 +190,23 @@ export const SearchCar = ({ onSearch }) => {
         </div>
       </div>
 
-      <div className={`${s.filterSection} ${s.mileageInputs}`}>
+      <div className={`${s.container} ${s.inputs}`}>
         <label>Car Mileage (in km)</label>
         <div>
           <input
-            className={s.mileageInput}
+            className={s.inputFrom}
             type="text"
             value={formatNumber(minMileage)}
             onChange={handleMinMileageChange}
           />
           <input
-            className={s.mileageInput}
+            className={s.inputTo}
             type="text"
             value={formatNumber(maxMileage)}
             onChange={handleMaxMileageChange}
           />
-          <p className={s.fromLabel}>From</p>
-          <p className={s.toLabel}>To</p>
+          <p className={s.textForm}>From</p>
+          <p className={s.textTo}>To</p>
         </div>
       </div>
 

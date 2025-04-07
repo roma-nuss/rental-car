@@ -1,10 +1,10 @@
-/* .btn {
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 12px 0;
   border-radius: 12px;
-  font-family: var(--main-font);
+  font-family: var(--primary-font);
   font-size: 16px;
   line-height: 1.25;
 }
@@ -63,71 +63,4 @@
 .btn.btnLoadMore:hover,
 .btn.btnLoadMore:focus {
   border: 1px solid var(--btn-active);
-} */
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 0;
-  border-radius: 12px;
-  font-family: var(--main-font);
-  font-size: 16px;
-  line-height: 1.25;
-}
-
-.btn.btnHomePage {
-  width: 276px;
-  background-color: var(--button-background);
-  color: var(--white);
-}
-
-.btn.btnHomePage:hover,
-.btn.btnHomePage:focus {
-  background-color: var(--button-background-active);
-}
-
-.btn.btnListItem {
-  width: 276px;
-  background-color: var(--button-background);
-  color: var(--white);
-}
-
-.btn.btnListItem:hover,
-.btn.btnListItem:focus {
-  background-color: var(--button-background-active);
-}
-.btn.btnSearch {
-  width: 156px;
-  background-color: var(--button-background);
-  color: var(--white);
-}
-
-.btn.btnSearch:hover,
-.btn.btnSearch:focus {
-  background-color: var(--button-background-active);
-}
-
-.btn.btnSend {
-  width: 156px;
-  background-color: var(--button-background);
-  color: var(--white);
-}
-
-.btn.btnSend:hover,
-.btn.btnSend:focus {
-  background-color: var(--button-background-active);
-}
-
-.btn.btnLoadMore {
-  width: 156px;
-  font-weight: 600;
-  background-color: var(--white);
-  color: var(--main-text-color);
-  border: 1px solid var(--button-background);
-}
-
-.btn.btnLoadMore:hover,
-.btn.btnLoadMore:focus {
-  border: 1px solid var(--button-background-active);
 }

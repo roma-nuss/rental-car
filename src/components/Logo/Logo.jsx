@@ -1,7 +1,7 @@
 export const Logo = () => {
   return (
     <>
-      <img src="/images/Logo.png" alt="RentalCar" />
+      <img src="/img/logo.svg" alt="RentalCar" />
     </>
   );
 };

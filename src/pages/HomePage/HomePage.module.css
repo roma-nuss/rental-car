@@ -4,7 +4,7 @@
   justify-content: center;
   padding-top: 436px;
   padding-bottom: 60px;
-  background-color: var(--main-text-color);
+  background-color: var(--primary-text-color);
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url('/img/main-bg.jpg');
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
 }
 
 h1 {
-  font-family: var(--main-font);
+  font-family: var(--primary-font);
   font-weight: 700;
   font-size: 60px;
   line-height: 1.2;
@@ -31,7 +31,7 @@ h1 {
 }
 
 h2 {
-  font-family: var(--main-font);
+  font-family: var(--primary-font);
   font-weight: 600;
   font-size: 24px;
   line-height: 1.33;

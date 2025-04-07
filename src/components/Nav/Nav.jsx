@@ -4,18 +4,18 @@ import s from './Nav.module.css';
 import clsx from 'clsx';
 
 export const Nav = () => {
-  const getLinkClass = ({ isActive }) => clsx(s.navLink, isActive && s.active);
+  const getLinkClass = ({ isActive }) => clsx(s.link, isActive && s.active);
 
   return (
     <header className={s.header}>
-      <NavLink to="/" className={s.logoLink}>
+      <NavLink to="/">
         <Logo />
       </NavLink>
-      <nav className={s.navMenu}>
-        <NavLink to="/" className={getLinkClass}>
+      <nav className={s.nav}>
+        <NavLink className={getLinkClass} to="/">
           Home
         </NavLink>
-        <NavLink to="/catalog" className={getLinkClass}>
+        <NavLink className={getLinkClass} to="/catalog">
           Catalog
         </NavLink>
       </nav>

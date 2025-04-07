@@ -2,14 +2,14 @@
   padding: 84px 120px 104px 120px;
 }
 
-.detailsContainer {
+.container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 72px;
 }
 
-.imgForm {
+.form {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -34,13 +34,13 @@
 }
 
 .carInfo svg {
-  stroke: var(--main-text-color) !important;
+  stroke: var(--primary-text-color) !important;
 }
 
 .icon {
   width: 16px;
   height: 16px;
-  fill: var(--main-text-color);
+  fill: var(--primary-text-color);
 }
 
 .carMainInfo {
@@ -50,7 +50,7 @@
   margin-bottom: 68px;
 }
 
-.idBrandModel {
+.model {
   height: 32px;
   display: flex;
   justify-content: start;
@@ -60,21 +60,21 @@
 }
 
 .idBrandModel h2 {
-  font-family: var(--main-font);
+  font-family: var(--primary-font);
   font-weight: 600;
   font-size: 24px;
   line-height: 1.33;
   letter-spacing: 0%;
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
 }
 
 .idBrandModel p {
-  font-family: var(--main-font);
+  font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0%;
-  color: var(--second-text-color);
+  color: var(--secondary-text-color);
 }
 
 .location-mileage {
@@ -83,25 +83,25 @@
   align-items: flex-end;
   gap: 16px;
   margin-bottom: 16px;
-  font-family: var(--main-font);
+  font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0%;
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
 }
 
 .carPrice {
-  font-family: var(--main-font);
+  font-family: var(--primary-font);
   font-weight: 600;
   font-size: 24px;
   line-height: 1.33;
-  color: var(--button-background);
+  color: var(--btn);
   margin-bottom: 32px;
 }
 
 .carDescription {
-  font-family: var(--main-font);
+  font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
@@ -116,12 +116,12 @@
 }
 
 .carCondition h3 {
-  font-family: var(--main-font);
+  font-family: var(--primary-font);
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0%;
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
 }
 
 .carCondition ul {
@@ -135,12 +135,12 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: var(--main-font);
+  font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0%;
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
 }
 
 .carSpecification {
@@ -152,12 +152,12 @@
 }
 
 .carSpecification h3 {
-  font-family: var(--main-font);
+  font-family: var(--primary-font);
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0%;
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
 }
 
 .carSpecification ul {
@@ -171,12 +171,12 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: var(--main-font);
+  font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0%;
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
 }
 
 .carFunction {
@@ -187,12 +187,12 @@
 }
 
 .carFunction h3 {
-  font-family: var(--main-font);
+  font-family: var(--primary-font);
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0%;
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
 }
 
 .carFunction ul {
@@ -206,10 +206,10 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: var(--main-font);
+  font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0%;
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
 }
