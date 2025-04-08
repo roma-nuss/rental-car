@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { getCarById } from '../../redux/cars/operations.js';
 import { Loader } from '../../components/Loader/Loader.jsx';
 import { Form } from '../../components/Form/Form.jsx';
-import sprite from '/icons/sprite1.svg';
+import sprite from '/icons/drp_sprite_1.svg';
 import s from './CatalogDetailPage.module.css';
 
 const CatalogDetailPage = () => {

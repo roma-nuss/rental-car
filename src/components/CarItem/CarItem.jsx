@@ -4,7 +4,7 @@ import s from './CarItem.module.css';
 import { Btn } from '../Btn/Btn.jsx';
 import { addFavoriteCar, removeFavoriteCar } from '../../redux/cars/slice.js';
 import { selectFavoriteCars } from '../../redux/cars/selectors.js';
-import sprite from '/icons/sprite1.svg';
+import sprite from '/icons/drp_sprite_1.svg';
 
 export const CarItem = ({ car }) => {
   const {

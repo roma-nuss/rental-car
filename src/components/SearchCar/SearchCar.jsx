@@ -16,7 +16,7 @@ import {
   selectedMaxMileage,
 } from '../../redux/filters/selectors.js';
 import { Btn } from '../Btn/Btn.jsx';
-import sprite from '/icons/sprite1.svg';
+import sprite from '/icons/drp_sprite_1.svg';
 import s from './SearchCar.module.css';
 import toast from 'react-hot-toast';
 
